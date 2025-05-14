@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				digital: {
+					blue: '#1a237e',
+					purple: '#7b1fa2',
+					orange: '#ff5722',
+					lightblue: '#42a5f5',
+					darkblue: '#0d1233',
+					navy: '#0f172a'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(90deg, #1a237e 0%, #7b1fa2 100%)',
+				'card-gradient': 'linear-gradient(45deg, #7b1fa2 0%, #42a5f5 100%)',
+				'partner-bg': 'radial-gradient(circle, #0d1233 0%, #090a1a 100%)',
+				'stats-bg': 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)'
 			}
 		}
 	},
